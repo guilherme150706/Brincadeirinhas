@@ -1,1 +1,59 @@
-...
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Random rand = new Random();
+        
+        String[] nomesN = {"Abílio", "Eduardo", "João Batista", "João Guilherme", "Lucas", "Rafael Fonseca", "Rafael Vinícius", "Robinho"};
+        String[] nomesS = {"Guilherme", "Henrique", "Lutz", "Nando", "Torrada"};
+        
+        
+		System.out.println("!!!ROLETA RUSSA!!!");
+		System.out.println();
+		System.out.println("Escolha uma opção:");
+		System.out.println("[1] Nordeste Group.");
+		System.out.println("[2] Sulistas Group.");
+		System.out.println("[3] Créditos.");
+		System.out.println("[4] Arregar.");
+		int menu = input.nextInt();
+		
+		switch (menu){
+		    
+            case 1:
+                System.out.println("Nordeste Group escolhido.");
+                break;
+            
+            case 2:
+                System.out.println("Sulistas Group escolhido.");
+                
+                break;
+		    
+            case 3:
+                System.out.println("Créditos:");
+                System.out.println();
+                System.out.println("Criador:");
+                System.out.println();
+                System.out.println("JOÃO GUILHERME");
+                break;
+            
+            case 4:
+                System.out.println("Você arregou e saiu.");
+                System.out.println("PATÉTICO!");
+                break;
+            
+            default:
+            System.out.println("Valor incorreto.");
+		    input.nextLine();
+	}
+		System.out.println(nomesN[3]);
+		System.out.println(nomesS[3]);
+		//while (menu < 3) {
+		    
+		    
+		//}
+		
+	}
+}
